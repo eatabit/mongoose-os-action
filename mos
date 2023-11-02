@@ -28,4 +28,5 @@ done
 
 cd $MOS_YML_PATH
 /usr/bin/mos $OTHER_ARGUMENTS
-git rev-parse head
+echo 'git rev-parse head'
+echo `git rev-parse head`
