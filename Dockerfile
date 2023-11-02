@@ -10,17 +10,15 @@ LABEL maintainer="Greg Oleksiak"
 
 # Update system
 RUN apt-get update
-RUN apt-get install -y --no-install-recommends apt-utils apt-add-repository build-essential sudo git
+RUN apt-get install --no-install-recommends apt-utils software-properties-common build-essential sudo git gpg-agent -y
 
 # Install mos tool dependencies
-RUN sudo add-apt-repository ppa:mongoose-os/mos
-RUN sudo apt-get update
+RUN sudo add-apt-repository ppa:mongoose-os/mos -y
 
 # Install mos tool
-RUN sudo apt-get install mos
+RUN sudo apt-get install mos-latest -y
 
-RUN which mos
-COPY mos mos
+COPY /usr/bin/mos mos
 
 # Set entrypoint
 ENTRYPOINT ["/mos"]
