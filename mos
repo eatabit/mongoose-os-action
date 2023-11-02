@@ -27,4 +27,4 @@ do
 done
 
 cd $MOS_YML_PATH
-/root/.mos/bin/mos $OTHER_ARGUMENTS
+/usr/bin/mos $OTHER_ARGUMENTS
