@@ -18,7 +18,7 @@ RUN sudo add-apt-repository ppa:mongoose-os/mos -y
 # Install mos tool
 RUN sudo apt-get install mos-latest -y
 
-COPY /usr/bin/mos mos
+COPY mos mos
 
 # Set entrypoint
 ENTRYPOINT ["/mos"]
