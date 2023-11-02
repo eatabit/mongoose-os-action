@@ -1,6 +1,6 @@
 name: 'Build Mongoose OS firmware V2'
 description: 'Builds Mongoose OS firmware for a given target'
-author: 'dea82, yaourdt'
+author: 'dea82, yaourdt, goleksiak'
 inputs:
   mos-yml-path:
     description: 'Path to mos.yml file'
@@ -9,7 +9,7 @@ inputs:
   platform:
     description: 'Target platform for this build'
     required: false
-    default: 'esp8266'
+    default: 'esp32'
   build-args:
     description: 'Further build arguments (eg. --build-var ...)'
     required: false
