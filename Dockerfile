@@ -10,7 +10,7 @@ LABEL maintainer="Greg Oleksiak"
 
 # Update system
 RUN apt-get update
-RUN apt-get install -y --no-install-recommends apt-utils build-essential sudo git
+RUN apt-get install -y --no-install-recommends apt-utils apt-add-repository build-essential sudo git
 
 # Install mos tool dependencies
 RUN sudo add-apt-repository ppa:mongoose-os/mos
